@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shortly</title>
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <div class="flex justify-between items-center font-sans font-extrabold h-24 relative">
+        <!-- left side -->
+        <div class="flex justify-between gap-x-16 items-center">
+          <h2 class="text-4xl ml-4 font-bold">Shortly</h2>
+          <nav class="hidden lg:flex lg:justify-between lg:items-center gap-x-8 text-gray-400">
+            <a class="hover:text-black" href="#">Features</a>
+            <a class="hover:text-black" href="#">Pricing</a>
+            <a class="hover:text-black" href="#">Resources</a>
+          </nav>
+        </div>
+        
+        <nav class="hidden lg:flex lg:justify-between lg:items-center gap-x-6 text-gray-400 mr-4">
+          <a class="hover:text-black" href="#">Login</a>
+          <a class="px-8 py-3 rounded-full bg-cyan-600 hover:bg-cyan-500 text-white" href="#">Signup</a>
+        </nav>
+        <!-- mobile nav -->
+        <div id="nav-btn" class="mr-4 lg:hidden">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+
+        <nav id="nav-menu" class='bg-slate-800 text-white absolute flex-col justify-center gap-y-6 items-center hidden lg:hidden left-6 right-6 top-24 py-12 rounded-lg'>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+          <span class="h-px w-4/5 bg-gray-400"></span>
+          <a href="#">Login</a>
+          <a class="px-8 py-4 w-4/5 rounded-full text-center bg-cyan-600 hover:bg-cyan-500 text-white" href="#">Signup</a>
+        </nav>
+
+      </div>
+    </header>
+    
+    <section id="section-1" class="container mx-auto px-5 my-10">
+      <div class="flex flex-col justify-center items-center gap-y-16 lg:flex-row-reverse lg:gap-x-3">
+        <div class="max-w-lg lg:self-start">
+          <img src="./images/illustration-working.svg" alt="">
+        </div>
+        <div class="flex flex-col justify-center items-center gap-y-8 font-sans text-center lg:items-start lg:text-left lg:w-1/2">
+          <h1 class='text-5xl text-black font-extrabold lg:pt-16'>More than just shorter links</h1>
+          <h2 class='text-2xl text-gray-400'>Build your brand's recognition and get detailed insights on how your links are performing</h2>
+          <a class="px-8 py-4 rounded-full bg-cyan-600 hover:bg-cyan-500 text-white text-3xl" href="#">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section id="section-2" class='mt-20 pt-12 bg-gray-100'>
+      <div class="container mx-auto max-w-4xl">
+        <form id="link-form" class="bg-slate-700 p-10 flex flex-col gap-y-3 font-sans rounded-lg mx-8 md:flex-row md:gap-x-4 relative">
+          <input id="link-input" type="text" placeholder="Shorten a link here" class="py-3 px-6 placeholder-amber-500 focus:outline-none  text-black w-full rounded-lg md:grow">
+          <button class="py-3 px-6 text-white text-center bg-cyan-600 hover:bg-cyan-500 rounded-lg md:basis-40">Shorten It</button>   
+          
+          <!-- Error Message -->
+          <div
+            id="err-msg"
+            class="absolute left-7 bottom-3 text-red-400 text-sm italic"
+          ></div>
+        </form>
+      </div>
+      
+      <div class="container mx-auto max-w-4xl font-sans font-bold">
+
+        <div class="bg-white mx-8 mt-8 rounded-lg flex flex-col justify-center items-center gap-y-2 p-6 md:flex-row md:justify-between">
+          <p class="text-black">https://frontendmentor.io</p>
+          <div class="flex flex-col justify-center items-center gap-y-2 md:flex-row md:justify-end md:gap-x-4">
+            <p class='text-teal-600'>https://rel.ink/k4IKyk</p>
+            <button class="py-2 px-6 rounded-md  bg-slate-700 hover:bg-slate-600 text-white font-normal">Copy</button>
+          </div>  
+        </div>
+
+        <div class="bg-white mx-8 mt-8 rounded-lg flex flex-col justify-center items-center gap-y-2 p-6 md:flex-row md:justify-between">
+          <p class="text-black">https://twitter.com/frontendmentor</p>
+          <div class="flex flex-col justify-center items-center gap-y-2 md:flex-row md:justify-end md:gap-x-4">
+            <p class='text-teal-600'>https://rel.ink/gxOXp9</p>
+            <button class="py-2 px-6 rounded-md  bg-slate-700 hover:bg-slate-600 text-white font-normal">Copy</button>
+          </div>
+          
+        </div>
+
+        <div class="bg-white mx-8 mt-8 rounded-lg flex flex-col justify-center items-center gap-y-2 p-6 md:flex-row md:justify-between">
+          <p class="text-black">https://linkedin.com/frontend-mentor</p>
+          <div class="flex flex-col justify-center items-center gap-y-2 md:flex-row md:justify-end md:gap-x-4">
+            <p class='text-teal-600'>https://rel.ink/gob3X9</p>
+            <button class="py-2 px-6 rounded-md  bg-slate-700 hover:bg-slate-600 text-white font-normal">Copy</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="section-3" class='pt-28 pb-44 bg-gray-100'>
+      <div class="container mx-auto">
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-black text-4xl font-bold text-center mb-6">Advanced Statistics</h2>
+          <p class='text-gray-400 text-center pb-20 max-w-xs md:max-w-sm'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        </div>
+      </div>
+
+      <div class="container mx-auto flex flex-col justify-center items-center md:flex-row md:gap-x-0 md:items-start ">
+
+        <div class="flex flex-col z-10 relative gap-y-8 justify-end items-center p-6 pt-20 mx-8 rounded-lg bg-white text-center md:mx-0 md:gap-y-0">
+          <h3 class="text black text-2xl font-bold">Brand Recognition</h3>
+          <p class='text-gray-400'>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-6 rounded-full bg-slate-800 md:left-1/4">
+            <img src="./images/icon-brand-recognition.svg" alt="">
+          </div>
+        </div>
+        <div class='w-2 h-24 bg-teal-500 md:h-4 md:w-24 md:relative md:translate-y-28'></div>
+
+        <div class="flex flex-col z-10 relative gap-y-8 justify-end items-center p-6 pt-20 mx-8 rounded-lg bg-white text-center md:mx-0 md:gap-y-0 md:translate-y-8">
+          <h3 class="text black text-2xl font-bold">Detailed Records</h3>
+          <p class='text-gray-400'>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-6 rounded-full bg-slate-800 md:left-1/4">
+            <img src="./images/icon-detailed-records.svg" alt="">
+          </div>
+        </div>
+        <div class='w-2 h-24 bg-teal-500 md:h-4 md:w-24 md:relative md:translate-y-28'></div>
+
+        <div class="flex flex-col z-10 relative gap-y-8 justify-end items-center p-6 pt-20 mx-8 rounded-lg bg-white text-center md:mx-0 md:gap-y-0 md:translate-y-16">
+          <h3 class="text black text-2xl font-bold">Fully Customizable</h3>
+          <p class='text-gray-400'>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 p-6 rounded-full bg-slate-800 md:left-1/4">
+            <img src="./images/icon-fully-customizable.svg" alt="">
+          </div>
+        </div>
+      
+      </div>
+    </section>
+
+    <section id="section-4" class="flex flex-col justify-center items-center text-white">
+        <h2 class="text-4xl font-bold text-center mb-6">Boost your links today</h2>
+        <a class="px-8 py-4 rounded-full bg-cyan-600 hover:bg-cyan-500text-2xl font-bold" href="#">Get Started</a>
+    </section>
+
+    <footer class='flex flex-col justify-center gap-y-10 items-center p-12  bg-gray-900 lg:flex-row lg:justify-between lg:items-start  '>
+      <h3 class='text-3xl font-bold text-gray-300'>Shortly</h3>
+
+      <div class="flex flex-col justify-center gap-y-4 items-center">
+        <p class='font-bold text-white pb-1'>Features</p>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Shortening</a>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Branded Links</a>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Analitics</a>
+      </div>
+
+      <div class="flex flex-col justify-center gap-y-4 items-center">
+        <p class='font-bold text-white pb-1'>Resources</p>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Blog</a>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Developers</a>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Support</a>
+      </div>
+
+      <div class="flex flex-col justify-center gap-y-4 items-center">
+        <p class='font-bold text-white pb-1'>Company</p>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link About</a>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Our Team</a>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Careers</a>
+        <a class='font-normal text-gray-500 hover:text-teal-600' href="#">Link Contact</a>
+      </div>
+
+      <div class="flex gap-x-6 items-center justify-center text-white hover:text-teal-600">
+        <a href="#">
+          <img src="./images/icon-facebook.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-instagram.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-pinterest.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/icon-twitter.svg" alt="">
+        </a>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
